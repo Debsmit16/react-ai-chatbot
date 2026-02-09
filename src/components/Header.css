@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: rgba(15, 15, 35, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: #e2e8f0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.menu-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menu-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.header-title h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header-subtitle {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 8px 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #10b981;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
